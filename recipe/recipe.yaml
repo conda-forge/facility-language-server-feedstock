@@ -22,10 +22,10 @@ requirements:
     - dotnet
 
 tests:
-  - script:
-      - facility-language-server &
-      - exe_pid=$!
-      - "trap \"kill -SIGTERM ${exe_pid}\" SIGTERM"
+  - script: |
+      facility-language-server &
+      exe_pid=$!
+      trap "kill -SIGTERM ${exe_pid}" SIGTERM
 
 about:
   license: MIT
