@@ -1,5 +1,5 @@
 {% set name = "facility-language-server" %}
-{% set version = "2.4.0" %}
+{% set version = "2.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/FacilityApi/FacilityLanguageServer/archive/v{{ version }}.tar.gz
-  sha256: 22113824d6072bdca73bc9fae289bdc080b1d41661d580e3d49686f7ae9d4e39
+  sha256: ac64ae61e08738a112fdefd7024cee1da4a8c6f0239a2a985c5339bbd880e71f
 
 build:
   noarch: generic
